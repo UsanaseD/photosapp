@@ -13,7 +13,7 @@ class photoView extends Component {
 
   }
 
-    //   get data related to one album
+    //   get data related to one album by id
     getPhotosOfAnAlbum = (event) => {
 
      event.preventDefault();

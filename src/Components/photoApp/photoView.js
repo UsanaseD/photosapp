@@ -21,9 +21,9 @@ class photoView extends Component {
     const {
       album
     } = form.elements;
-            axios(`https://jsonplaceholder.typicode.com/albums/${album.value}/photos`)
+            axios(`https://suguchallenge3.herokuapp.com/request/photos/${album.value}`)
             .then(response => {
-                var ad = (response.data)
+                var ad = (response.data.data.body)
                 this.setState({ titles: ad })
             })
             .catch(error => {
